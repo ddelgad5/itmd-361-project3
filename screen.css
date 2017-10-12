@@ -7,8 +7,39 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
-
+/* Base Styles */
+html {
+  font-size: 1.125em; /* 18/16 = 1.125 */
+  line-height: 1.222em; /* 22/18 = 1.2222222 */
+  #background-color: #8C8D8E;
+}
+/* Layout Styles */
+#navigation {
+  position: absolute;
+  width: 100%;
+  background-color: cyan;
+  top: 0;
+  left: 0;
+  #background-color: #494C52;
+}
+#navigation li {
+  float: left;
+  width: 33.3333%;
+}
+#navigation a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+/* Module Styles */
 img {
   display: block;
-  max-width: 100%;
+  max-width: 75%;
 }
+figcaption {
+  font-size: 0.75em; /*12/16 = 0.75 */
+}
+/* State Styles */
+
+/* Theme Styles */
