@@ -13,6 +13,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18/16 = 1.125 */
   line-height: 1.2222em; /* 22 / 18 = 1.2222 */
+  background-color: #BBBBBB;
+  color: #110D0D;
 }
 body {
   padding-top: 3.667em; /* 66/18=3.6666666 */
@@ -78,7 +80,7 @@ ul li h4 {
 #navigation {
   position: absolute;
   width: 100%;
-  background-color: #000000;
+  background-color: #6D6D6D;
   top: 0;
   left: 0;
 }
@@ -98,14 +100,13 @@ footer a,
 footer {
   text-decoration: none;
   color: #ffffff;
-
 }
 footer,
 footer a {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #000000;
+  background-color: #6D6D6D;
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
