@@ -122,7 +122,7 @@ figcaption {
   /*line-height: 1em; /* smaller than 22 px (12.222) */
   padding-bottom: 0.105em; /* (22 / 12.222) / 2 = 1.8 */
   padding-top: 0.105em; /* (22 / 12.222) / 2 = 1.8 */
-
+  text-align: center;
 }
 /* State Styles */
 
