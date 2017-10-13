@@ -10,17 +10,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base Styles */
 html {
   font-size: 1.125em; /* 18/16 = 1.125 */
-  line-height: 1.222em; /* 22/18 = 1.2222222 */
-  #background-color: #8C8D8E;
+  line-height: 1.33333em; /* 24 / 18 = 1.333333 */
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 2.6666em;
+  font-variant: small-caps;
+}
+
+h3 {
+  font-size: 1.5em; /* 27 / 18 = 1.5 */
+  line-height: 2.6666em; /* 48 / 18 = 2.6666 */
+  font-variant: small-caps;
 }
 /* Layout Styles */
 #navigation {
   position: absolute;
   width: 100%;
-  background-color: cyan;
+  background-color: #FF5B52;
   top: 0;
   left: 0;
-  #background-color: #494C52;
 }
 #navigation li {
   float: left;
@@ -31,6 +41,10 @@ html {
   text-decoration: none;
   width: 100%;
   text-align: center;
+  padding-top: 0.6666em;  /* 12/18= 0.66666 */
+  padding-bottom: 0.6666em;  /* 12/18= 0.66666 */
+  color: black;
+  font-weight: bold;
 }
 /* Module Styles */
 img {
