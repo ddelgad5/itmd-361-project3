@@ -7,23 +7,55 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
-/*Major Second ratio @ 18px
-  http://www.modularscale.com/?18&px&1.125 */
+/*Minor 3rd @ 18px
+  http://www.modularscale.com/?18&px&1.2 */
 /* Base Styles */
 html {
-  font-size: 1.125em; /* 18/16 = 1.125 */
-  line-height: 1.2222em; /* 22 / 18 = 1.2222 */
+  font-size: 18px;
+  line-height: 22px;
   background-color: #BBBBBB;
   color: #110D0D;
 }
 body {
-  padding-top: 3.667em; /* 66/18=3.6666666 */
-  padding-left: 1.2222em; /* 22 / 18 = 1.2222 */
-  padding-right: 1.2222em; /* 22 / 18 = 1.2222 */
+  padding-top: 44px;
+  padding-bottom: 66px;
+  padding-left: 18px;
+  padding-right: 15px;
 }
-section {
-  padding-top: 1.2222em; /* 22 / 18 = 1.2222 */
+p {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
+h6{
+  font-size: 21.6px;
+  line-height: 22px;
+}
+h5{
+  font-size: 25.92px;
+  line-height: 44px;
+}
+h4{
+  font-size: 31.104px;
+  line-height: 44px;
+}
+h3{
+  font-size: 37.325px;
+  line-height: 44px;
+}
+h2{
+  font-size: 44.79px;
+  line-height: 66px;
+}
+h1{
+  text-align: center;
+  font-size: 53.748px;
+  line-height: 66px;
+}
+figcaption{
+  font-size: 15px;
+  line-height: 22px;
+}
+
 h1,
 h2,
 h3,
@@ -31,98 +63,53 @@ h4,
 h5,
 h6 {
   font-variant: small-caps;
-  padding-bottom: 1.2222em; /* 22 / 18 =1.2222 */
 }
-h1 {
-  font-size: 2.281em; /* 41.053 / 18 = 2.281 */
-  line-height: 1.0718em; /* 44 / 41.053 = 1.0718 */
-  padding-bottom: 0.5359em; /* 22 / 41.053 = 0.5359 */
-  text-align: center;
-  font-weight: bold;
-}
-h2 {
-  font-size: 2.0272em; /* 36.491 / 18 = 2.0272 */
-  line-height: 1.2058em; /* 44 / 36.491 = 1.2058 */
-  padding-bottom: 0.6029em; /* 22 / 36.491 = 0.6029 */
-  text-align: center;
-  font-weight: bold;
-}
-h3 {
-  font-size: 1.802em; /* 32.437 / 18 = 1.802 */
-  line-height: 1.0174em; /* 33 / 32.437 = 1.0174*/
-  padding-bottom: 0.1696em;  /* (11 / 32.437) / 2 = 0.1696 */
-  padding-top: 0.1696em;  /* (11 / 32.437) / 2 = 0.1696 */
-  text-decoration: underline;
-  font-weight: bold;
-}
-h4 {
-  font-size: 1.602em; /* 28.833 / 18 = 1.602 */
-  line-height: 1.1445em;  /* 33 / 28.833 = 1.1445 */
-  padding-bottom: 0.1908em;  /* (11 / 28.833) / 2 =  0.1908*/
-  padding-top: 0.1908em;  /* (11 / 28.833) / 2 =  0.1908*/
-}
-h5 {
-  font-size: 1.424em; /* 25.629 / 18 = 1.424 */
-  line-height: 1.2876em;  /* 33 / 25.629 = 1.2876 */
-  padding-bottom: 0.2146em;  /* (11 / 25.629) / 2 = 0.2146 */
-  padding-top: 0.2146em;  /* (11 / 25.629) / 2 = 0.2146 */
-}
-h6 {
-  font-size: 1.266em; /* 22.781 / 18 = 1.266 */
-  line-height: 1.4486em;  /* 33 / 22.781 = 1.4486 */
-  padding-bottom: 0.2414em;  /* (11 / 22.781) / 2 = 0.2414 */
-  padding-top: 0.2414em;  /* (11 / 22.781) / 2 = 0.2414 */
-}
-ul li h4 {
-  list-style-type: decimal;
-}
+
 /* Layout Styles */
-#navigation {
+nav{
   position: absolute;
   width: 100%;
-  background-color: #6D6D6D;
   top: 0;
   left: 0;
+  /*padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #6D6D6D;*/
 }
-#navigation li {
+nav li{
   float: left;
   width: 33.3333%;
+  /*padding-top: 11px;
+  padding-bottom: 11px;*/
+  background-color: #6D6D6D;
 }
-#navigation a {
+nav a{
   display: block;
-  width: 100%;
   text-align: center;
-  padding-top: 0.6111em;  /* 11/18= 0.66666 */
-  padding-bottom: 0.6111em;  /* 11/18= 0.66666 */
-}
-#navigation a,
-footer a,
-footer {
+  width: 100%;
   text-decoration: none;
   color: #ffffff;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 footer {
+  position: absolute;
+  width: 100%;
   bottom: 0;
   left: 0;
-  width: 100%;
   background-color: #6D6D6D;
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
-
+footer address {
+  text-align: center;
+}
 /* Module Styles */
+
 img {
-  display: block;
+  display: none;
   max-width: 100%;
 }
-figcaption {
-  font-size: 0.79em; /* 12.222 / 18 = 0.79 */
-  /*line-height: 1em; /* smaller than 22 px (12.222) */
-  padding-bottom: 0.105em; /* (22 / 12.222) / 2 = 1.8 */
-  padding-top: 0.105em; /* (22 / 12.222) / 2 = 1.8 */
-  text-align: center;
-}
-/* State Styles */
 
+/* State Styles */
+nav li:hover{
+  background-color: #000000;
+}
 /* Theme Styles */
