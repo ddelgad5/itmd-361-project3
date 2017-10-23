@@ -8,52 +8,53 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 /*Minor 3rd @ 18px
-  http://www.modularscale.com/?18&px&1.2 */
+http://www.modularscale.com/?18&px&1.2
+ems conversion will be rounded to the fourth decimal point (x.xxxx)*/
 /* Base Styles */
 html {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */ /* em set to 18px */
+  line-height: 1.2222em; /* 22 / 18 = 1.2222 */
   background-color: #BBBBBB;
   color: #110D0D;
 }
 body {
-  padding-top: 44px;
-  padding-bottom: 66px;
-  padding-left: 18px;
-  padding-right: 15px;
+  padding-top: 3.6667em; /* 66 / 18 = 3.6667 */
+  padding-bottom: 3.6667em; /* 66 / 18 = 3.6667 */
+  padding-left: 1em; /* 18 / 18 = 1 */
+  padding-right: 1em; /* 18 / 18 = 1 */
 }
 p {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.2222em; /* 22 / 18 = 1.2222 */
+  padding-bottom: 1.2222em; /* 22 / 18 = 1.2222 */
 }
-h6{
-  font-size: 21.6px;
-  line-height: 22px;
+h6 {
+  font-size: 1.2em; /* 21.6 / 18 = 1.2 */ /* em set to 21.6 px */
+  line-height: 1.0185em; /* 22 / 21.6 = 1.0185 */
 }
-h5{
-  font-size: 25.92px;
-  line-height: 44px;
+h5 {
+  font-size: 1.44em; /* 25.92 / 18 = 1.44 */ /* em set to 25.92 px */
+  line-height: 1.6975em; /* 44 / 25.92 = 1.6975 */
 }
-h4{
-  font-size: 31.104px;
-  line-height: 44px;
+h4 {
+  font-size: 1.728em; /* 31.104 / 18 = 1.728 *//* em set to 31.104px */
+  line-height: 1.4146em; /* 44 / 31.104 = 1.4146 */
 }
-h3{
-  font-size: 37.325px;
-  line-height: 44px;
+h3 {
+  font-size: 2.0736em; /* 37.325 / 18 = 2.0736 */ /* em set to 37.325px */
+  line-height: 1.1788em; /* 44 / 37.325 = 1.1788 */
 }
-h2{
-  font-size: 44.79px;
-  line-height: 66px;
+h2 {
+  font-size: 2.4883em; /* 44.79 / 18 = 2.4883 */  /* em set to 44.79px */
+  line-height: 1.4735em; /* 66 / 44.79 = 1.4735 */
 }
-h1{
+h1 {
   text-align: center;
-  font-size: 53.748px;
-  line-height: 66px;
+  font-size: 2.986em; /* 53.748 / 18 = 2.986 */ /* em set to 53.748px */
+  line-height: 1.228em; /* 66 / 53.748 = 1.228 */
 }
-figcaption{
-  font-size: 15px;
-  line-height: 22px;
+figcaption {
+  font-size: 0.8333em; /* 15 / 18 = 0.8333 */ /* em set to 15 px */
+  line-height: 1.4667em; /* 22 / 15 = 1.4667 */
 }
 
 h1,
@@ -66,7 +67,7 @@ h6 {
 }
 
 /* Layout Styles */
-nav{
+nav {
   position: absolute;
   width: 100%;
   top: 0;
@@ -75,21 +76,21 @@ nav{
   padding-bottom: 11px;
   background-color: #6D6D6D;*/
 }
-nav li{
+nav li {
   float: left;
   width: 33.3333%;
   /*padding-top: 11px;
   padding-bottom: 11px;*/
   background-color: #6D6D6D;
 }
-nav a{
+nav a {
   display: block;
   text-align: center;
   width: 100%;
   text-decoration: none;
   color: #ffffff;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 0.6111em; /* 11/18 = 0.6111 */
+  padding-bottom: 0.6111em; /* 11/18 = 0.6111 */
 }
 footer {
   position: absolute;
@@ -109,7 +110,7 @@ img {
 }
 
 /* State Styles */
-nav li:hover{
+nav li:hover {
   background-color: #000000;
 }
 /* Theme Styles */
