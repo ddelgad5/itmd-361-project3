@@ -96,9 +96,9 @@ nav a {
 }
 footer {
   position: absolute;
-  width: 100%;
   bottom: 0;
   left: 0;
+  width: 100%;
   background-color: #6D6D6D;
 }
 footer address {
@@ -109,29 +109,38 @@ footer address {
 img {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
+
 
 /* State Styles */
 nav li:hover {
   background-color: #000000;
 }
-@media screen and (min-width: 300px) {
-
-}
 @media screen and (min-width: 600px) {
-
+  /*464px grid w/ 12.5px margins (100)
+  columns: 163px;
+  gutters: 25px; */
+  .album-cluster {
+    float: left;
+    width: 27.1667vw ; /* 163 / 600 = 0.271667 */
+    margin-right: 2.0833vw; /* 12.5 / 600 = 0.020833 */
+    margin-left: 2.0833vw; /* 12.5 / 600 = 0.020833 */
+  }
 }
 @media screen and (min-width: 936px) {
-  /*3-column grid @900px
-  columns: 275px;
-  gutters: 37.5px;*/
-  #pic-grid h3 {
-
-  }
-  #pic-grid figure {
-    width: 275px;
+  /*750px grid w/ 15px margins (150)
+  columns: 150px;
+  gutters: 25px;*/
+  .album-cluster {
     float: left;
-    margin-left: 37.5px;
+    width: 16.0256vw; /* 150 / 936 = 0.160256 */
+    margin-right: 1.6026vw; /* 15 / 936 = 0.016026 */
+    margin-left: 1.6026vw; /* 15 / 936 = 0.016026 */
   }
 }
 /* Theme Styles */
+
+.album-cluster {
+  padding-bottom: 1.5556em; /* 28 / 18 = 1.5556 */
+}
