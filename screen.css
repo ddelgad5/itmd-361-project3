@@ -16,6 +16,7 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */ /* em set to 18px */
   line-height: 1.2222em; /* 22 / 18 = 1.2222 */
   background-color: #545E73;
+  font-family: Times, "Times New Roman", Georgia, serif;
 }
 body {
   padding-top: 3.6667em; /* 66 / 18 = 3.6667 */
@@ -85,7 +86,7 @@ nav {
 }
 nav li {
   float: left;
-  width: 33.33333333%;
+  width: 33.3333%;
   background-color: #AC9C78;
 }
 nav a {
@@ -172,11 +173,21 @@ nav li:hover {
   }*/
   body,
   nav {
-    margin-left: 6.9444vw; /* 65 / 936 = 0.069444 */
-    margin-right: 6.9444vw; /* 65 / 936 = 0.069444 */
+    margin-left: 6.9444%; /* 65 / 936 = 0.069444 */
+    margin-right: 6.9444%; /* 65 / 936 = 0.069444 */
   }
   nav {
-    width: 86.111%; /*806 / 936 = 0.861111*/
+    width: 86.1112%; /*806 / 936 = 0.861111*/
+  }
+}
+@media screen and (min-width: 1200px) {
+  body,
+  nav {
+    margin-left: 12.5%; /* 150 / 1200 = 0.125 */
+    margin-right: 12.5%; /* 150 / 1200 = 0.125 */
+  }
+  nav {
+    width: 75%; /*900 / 1200 = 0.75*/
   }
 }
 /* Theme Styles */
