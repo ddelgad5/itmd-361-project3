@@ -10,18 +10,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Minor 3rd @ 18px
 http://www.modularscale.com/?18&px&1.2
 ems conversion will be rounded to the fourth decimal point (x.xxxx)*/
+/*Color scheme http://paletton.com/#uid=43K050k9ClB1wAi59qLengUozef*/
 /* Base Styles */
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */ /* em set to 18px */
   line-height: 1.2222em; /* 22 / 18 = 1.2222 */
-  background-color: #BBBBBB;
-  color: #110D0D;
+  background-color: #545E73;
 }
 body {
   padding-top: 3.6667em; /* 66 / 18 = 3.6667 */
   padding-bottom: 1em; /* 18 / 18 = 1 */
   padding-left: 1em; /* 18 / 18 = 1 */
   padding-right: 1em; /* 18 / 18 = 1 */
+  background-color: #B1B3B8;
+  color: #000000;
 }
 p {
   padding-top: 1.2222em; /* 22 / 18 = 1.2222 */
@@ -83,15 +85,15 @@ nav {
 }
 nav li {
   float: left;
-  width: 33.3333%;
-  background-color: #6D6D6D;
+  width: 33.33333333%;
+  background-color: #AC9C78;
 }
 nav a {
   display: block;
   text-align: center;
   width: 100%;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding-top: 0.6111em; /* 11/18 = 0.6111 */
   padding-bottom: 0.6111em; /* 11/18 = 0.6111 */
 }
@@ -119,7 +121,7 @@ img {
 
 /* State Styles */
 nav li:hover {
-  background-color: #000000;
+  background-color: #71541A;
 }
 @media screen and (min-width: 600px) {
   /*464px grid w/ 12.5px margins (100)
@@ -157,14 +159,24 @@ nav li:hover {
   .flexbox .album-cluster,
   .cssgrid .album-cluster {
     float: none;
+    margin-right: auto;
+    margin-left: auto;
   }
   .flexbox #pic-grid {
     display: flex;
     flex-wrap: wrap;
   }
-  .cssgrid #pic-grid {
+  /*.cssgrid #pic-grid {
     display: grid;
-    grid: auto-flow / 1fr 1fr 1fr 1fr 1fr;
+    grid: auto-flow / auto-flow;
+  }*/
+  body,
+  nav {
+    margin-left: 6.9444vw; /* 65 / 936 = 0.069444 */
+    margin-right: 6.9444vw; /* 65 / 936 = 0.069444 */
+  }
+  nav {
+    width: 86.111%; /*806 / 936 = 0.861111*/
   }
 }
 /* Theme Styles */
