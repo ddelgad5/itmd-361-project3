@@ -20,14 +20,13 @@ html {
 }
 body {
   padding-top: 3.6667em; /* 66 / 18 = 3.6667 */
-  padding-bottom: 1em; /* 18 / 18 = 1 */
+  padding-bottom: 1.2222em; /* 22 / 18 = 1.2222 */
   padding-left: 1em; /* 18 / 18 = 1 */
   padding-right: 1em; /* 18 / 18 = 1 */
   background-color: #B1B3B8;
   color: #000000;
 }
 p {
-  padding-top: 1.2222em; /* 22 / 18 = 1.2222 */
   padding-bottom: 1.2222em; /* 22 / 18 = 1.2222 */
 }
 h6 {
