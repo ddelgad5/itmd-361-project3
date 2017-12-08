@@ -38,7 +38,8 @@ $.noConflict();
         },
         success: function(data) {
           console.log(data);
-          $('#'+albumid).append('<ol>');
+          console.log(albumid);
+          $(this).append('<ol>');
           for (step = 0; step < data.items.length; step++) {
             $('#'+albumid).append('<li>' + data.items[step].name + '</li>');
           }
