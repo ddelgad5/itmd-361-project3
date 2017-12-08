@@ -11,14 +11,14 @@ $.noConflict();
   $(document).ready(function() {
     $(location).attr('href');
     yourtoken = window.location.hash;
-    yourtoken = yourtoken.slice(14,-34);
+    yourtoken = yourtoken.slice(14, -34);
 
     console.log("This is your token:", yourtoken);
   });
 
   // Verify Token and Fetch Tracklist
   $('.album').click(function() {
-    if (yourtoken === undefined){
+    if (yourtoken === "" || yourtoken === null || yourtoken === undefined){
       console.log("yourtoken is null");
       document.location.href= "https://accounts.spotify.com/authorize?client_id=2712479b9c5f4b4da5ba43507064c8eb&redirect_uri=http://daviddelgado.co/music&response_type=token";
     }
