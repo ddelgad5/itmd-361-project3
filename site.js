@@ -39,13 +39,19 @@ $.noConflict();
           "Authorization": "Bearer "+yourtoken
         },
         success: function(data) {
-          console.log(data);
-          console.log(albumid);
-          $('#'+albumid2).append('<ol>');
-          for (step = 0; step < data.items.length; step++) {
-            $('#'+albumid2).append('<li>' + data.items[step].name + '</li>');
+          if ($('#'+albumid2).attr('data-checked') === '1') {
+            console.log("This album track list has already been fetched.");
           }
-          $('#'+albumid2).append('</ol>');
+          else{
+            console.log(data);
+            console.log(albumid);
+            $('#'+albumid2).append('<ol>');
+            for (step = 0; step < data.items.length; step++) {
+              $('#'+albumid2).append('<li>' + data.items[step].name + '</li>');
+            }
+            $('#'+albumid2).append('</ol>');
+            $('#'+albumid2).attr('data-checked', '1');
+          }
         }
       });
     }
