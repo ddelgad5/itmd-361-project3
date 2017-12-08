@@ -40,7 +40,7 @@ $.noConflict();
           console.log(data);
           $('#'+albumid).append('<ol>');
           for (step = 0; step < data.items.length; step++) {
-            $('#'+albumid).append('<li>' + data.items(step).name + '</li>');
+            $('#'+albumid).append('<li>' + data.items[step].name + '</li>');
           }
           $('#'+albumid).append('</ol>');
         }
