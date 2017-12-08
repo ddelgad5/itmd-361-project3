@@ -18,7 +18,7 @@ $.noConflict();
   $('.album').click(function() {
     if (yourtoken === undefined){
       console.log("yourtoken is null");
-      document.location.href= "https://accounts.spotify.com/authorize?client_id=2712479b9c5f4b4da5ba43507064c8eb&redirect_uri=http://daviddelgado.co/music/&response_type=token";
+      document.location.href= "https://accounts.spotify.com/authorize?client_id=2712479b9c5f4b4da5ba43507064c8eb&redirect_uri=http://daviddelgado.co/music&response_type=token";
     }
     else {
       console.log("Clicked on an album.  The album is id'd as:", $(this).attr('data-id'));
