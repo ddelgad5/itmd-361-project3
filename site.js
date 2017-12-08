@@ -10,7 +10,9 @@ $.noConflict();
   // Fetch Spotify Token
   $(document).ready(function() {
     $(location).attr('href');
-    yourtoken = window.location.hash.access_token;
+    yourtoken = window.location.hash;
+    yourtoken = yourtoken.slice(14,-34);
+
     console.log("This is your token:", yourtoken);
   });
 
