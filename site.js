@@ -5,6 +5,7 @@ $.noConflict();
 
   var yourtoken;
   var albumid;
+  var albumid2;
   var url1;
   var step;
 
@@ -26,6 +27,7 @@ $.noConflict();
     else {
       console.log("Clicked on an album.  The album is id'd as:", $(this).attr('data-id'));
       albumid = $(this).attr('data-id');
+      albumid2 = $(this).attr('id');
       url1 = "https://api.spotify.com/v1/albums/"+albumid+"/tracks";
       $.ajax({
         url: url1,
@@ -39,11 +41,11 @@ $.noConflict();
         success: function(data) {
           console.log(data);
           console.log(albumid);
-          $(this).append('<ol>');
+          $('#'+albumid2).append('<ol>');
           for (step = 0; step < data.items.length; step++) {
-            $('#'+albumid).append('<li>' + data.items[step].name + '</li>');
+            $('#'+albumid2).append('<li>' + data.items[step].name + '</li>');
           }
-          $('#'+albumid).append('</ol>');
+          $('#'+albumid2).append('</ol>');
         }
       });
     }
