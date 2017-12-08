@@ -19,8 +19,8 @@ var yourtoken = "";
       document.location.href= "https://accounts.spotify.com/authorize?client_id=2712479b9c5f4b4da5ba43507064c8eb&redirect_uri=http://daviddelgado.co/music&response_type=token";
     }
     else {
-      console.log("Clicked on an album.  The album is id'd as:", $(this).attr('id'));
-      var albumid = $(this).attr('id');
+      console.log("Clicked on an album.  The album is id'd as:", $(this).attr('data-id'));
+      var albumid = $(this).attr('data-id');
       var url1 = "https://api.spotify.com/v1/albums/"+albumid+"/tracks";
       $.ajax({
         url: url1,
